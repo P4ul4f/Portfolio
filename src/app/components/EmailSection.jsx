@@ -116,8 +116,10 @@ const handleSubmit = async (e) => {
                     )
                 }
             </form>
-        </div><div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute bottom-[-0] -left-10 transform -translate-x-1 -translate-1/2">
         </div>
+        <div className="absolute bottom-[-80px] left-[20%] transform -translate-x-1/2 pointer-events-none z-0">
+                <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-96 w-96 blur-3xl"></div>
+            </div>
     </section>
   )
 }
