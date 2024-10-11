@@ -45,7 +45,7 @@ const handleSubmit = async (e) => {
                 estaré encantada de conversar sobre cómo puedo aportar valor a tu equipo.
             </p>
             <div className="socials flex flex-row gap-6">
-                <Link href="github.com">
+                <Link href="https://github.com/P4ul4f">
                     <Image 
                         src="/images/github.png"
                         alt="Github Icon"
@@ -53,7 +53,7 @@ const handleSubmit = async (e) => {
                         height={40}
                     />
                 </Link>
-                <Link href="github.com">
+                <Link href="https://www.linkedin.com/in/paula-antonella-ferreyra-879983236/">
                     <Image 
                         src="/images/linkedin.png"
                         alt="Linkedin Icon"
