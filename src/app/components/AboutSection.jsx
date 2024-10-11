@@ -10,7 +10,6 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>JavaScript</li>
-        <li>Node.js</li>
         <li>React</li>
         <li>SQL</li>
         <li>Java</li>
@@ -47,7 +46,7 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("education");
   const[isPending, startTransition]= useTransition();
 
   const handleTabChange = (id) => {
@@ -57,24 +56,22 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white">
+    <section className="text-white" id="about">
         <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:py-16">
             <Image src="/images/aboutimage.jpg" width={400} height={400} alt="About me image"></Image>
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-                <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-                <p className="text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorum sapiente enim nihil id harum deleniti 
-                accusantium assumenda vel nesciunt nam ea molestias amet, fugiat, illum consequatur. Perferendis, ratione laborum? 
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, eos soluta.
+                <h2 className="text-4xl font-bold text-white mb-4">Acerca de mí</h2>
+                <p className="text-base lg:text-lg text-justify">Soy estudiante de cuarto año de Ingeniería en Sistemas de Información, con experiencia en desarrollo web y programación avanzada. Mi formación me ha permitido desarrollar habilidades técnicas en diversos lenguajes de programación, complementadas con un enfoque en la gestión de sistemas y el análisis de datos. Me especializo en el diseño de soluciones eficientes, seguras y escalables, aplicando un enfoque metódico y orientado a resultados. Estoy interesado en participar en proyectos innovadores donde pueda aplicar mis conocimientos y contribuir al desarrollo de soluciones tecnológicas.
                 </p>
                 <div className="flex flex-row  justify-start mt-8">
-                  <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
-                    Habilidades
-                  </TabButton>
                   <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>
                     Educación
                   </TabButton>
                   <TabButton selectTab={() => handleTabChange("certification")} active={tab === "certification"}>
                     Certificaciones
+                  </TabButton>
+                  <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
+                    Habilidades
                   </TabButton>
                 </div>
                 <div className="mt-8">
