@@ -19,7 +19,7 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600" style={{ fontSize: '4.5rem' }}>
-              Hola, soy {" "}
+              Hola, soy{" "}
             </span>
             <br></br>
               <TypeAnimation
