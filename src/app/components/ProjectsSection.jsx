@@ -8,7 +8,7 @@ const projectsData = [
     {
         id:1,
         title: "Full Stack Website", 
-        description:"Cinéfilos es una plataforma dedicada a explorar y analizar las preferencias de consumo audiovisual.",
+        description:"Este proyecto fue realizado para el Seminario Integrador de la universidad, utilizando React, APIs, Java, MySQL",
         image:"/images/cine.png",
         tag:["All", "Web"],
         gitUrl:"https://github.com/P4ul4f/CinefilosFront.git",
@@ -25,16 +25,6 @@ const projectsData = [
     },
     {
         id:3,
-        title: "React Portfolio Website", 
-        description:"Portfolio personal.",
-        image:"/images/fondo.png",
-        tag:["All", "Web"],
-        gitUrl:"https://github.com/P4ul4f/Portfolio.git",
-        previewUrl:"/",
-    },
-    
-    {
-        id:4,
         title: "E-commerce Aplication", 
         description:"Este proyecto fue desarrollado en una asignatura de la universidad.",
         image:"/images/sabor.png",
@@ -43,7 +33,7 @@ const projectsData = [
         previewUrl:"/",
     },
     {
-        id:5,
+        id:4,
         title: "Frontend Website", 
         description:"Este proyecto fue realizado en un curso de JavaScript.",
         image:"/images/uco.png",
@@ -52,11 +42,20 @@ const projectsData = [
         previewUrl:"https://proyectofinal-sepia.vercel.app/index.html",
     },
     {
-        id:6,
+        id:5,
         title: "App", 
         description:"Updating...",
         image:"/images/fondo.png",
         tag:["All", "Mobile"],
+        gitUrl:"/",
+        previewUrl:"/",
+    },
+    {
+        id:6,
+        title: "E-commerce Aplication", 
+        description:"Updating...",
+        image:"/images/fondo.png",
+        tag:["All", "Web"],
         gitUrl:"/",
         previewUrl:"/",
     },
