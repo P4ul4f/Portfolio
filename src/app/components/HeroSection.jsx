@@ -15,7 +15,6 @@ const HeroSection = () => {
       ([entry]) => {
         const isCurrentlyVisible = entry.isIntersecting;
         setIsVisible(isCurrentlyVisible); // Cambia el estado basado en la visibilidad
-        console.log('Is visible:', isCurrentlyVisible); // Log de la visibilidad
       },
       { threshold: 0.1 } // Detecta si el componente es visible al menos en un 10%
     );
@@ -26,7 +25,7 @@ const HeroSection = () => {
 
     return () => {
       if (textRef.current) {
-        observer.unobserve(textRef.current); // Limpia el observador cuando el componente se desmonta
+        observer.unobserve(textRef.current); 
       }
     };
   }, []);
