@@ -35,7 +35,7 @@ const TAB_DATA = [
     id:"certification",
     content: (
       <ul className="list-disc pl-2">
-        <li>First Certificate, Cultura Inglesa</li>
+        <li>First Certificate, Cultural Inglesa</li>
         <li>Curso Full Stack, Egg</li>
         <li>Programación Backend, CoderHouse</li>
         <li>React Js, CoderHouse</li>

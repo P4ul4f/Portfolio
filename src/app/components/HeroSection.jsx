@@ -6,7 +6,30 @@ import {motion } from "framer-motion";
 import Link from 'next/link';
 
 const HeroSection = () => {
-  
+
+  const [isVisible, setIsVisible] = useState(true); // Estado para controlar la visibilidad
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        const isCurrentlyVisible = entry.isIntersecting;
+        setIsVisible(isCurrentlyVisible); // Cambia el estado basado en la visibilidad
+        console.log('Is visible:', isCurrentlyVisible); // Log de la visibilidad
+      },
+      { threshold: 0.1 } // Detecta si el componente es visible al menos en un 10%
+    );
+
+    if (textRef.current) {
+      observer.observe(textRef.current); // Observa el componente
+    }
+
+    return () => {
+      if (textRef.current) {
+        observer.unobserve(textRef.current); // Limpia el observador cuando el componente se desmonta
+      }
+    };
+  }, []);
 
   return (
     <section className="lg:py-16">
@@ -22,6 +45,8 @@ const HeroSection = () => {
               Hola, soy {" "}
             </span>
             <br></br>
+            <span ref={textRef}>
+            {isVisible && (
               <TypeAnimation
                 sequence={[
                   "Paula",
@@ -36,8 +61,10 @@ const HeroSection = () => {
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
-                style={{ fontSize: '3.5rem' }}
+                style={{fontSize:'4rem'}}
               />
+            )}
+            </span>
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
           Con una mentalidad orientada a resultados, me motiva trabajar en entornos dinámicos donde puedo aplicar mis habilidades y aprender continuamente. Busco contribuir a proyectos que desafíen mis capacidades y me permitan crecer profesionalmente.
@@ -50,8 +77,9 @@ const HeroSection = () => {
               Contratarme
             </Link>
             <Link
-              href="/"
+              href="/CVPaulaFerreyra.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-500 to-purple-200 hover:bg-slate-800 text-white mt-3"
+              download="CVPaulaFerreyra.pdf"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Descargar CV
