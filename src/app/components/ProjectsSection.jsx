@@ -8,7 +8,7 @@ const projectsData = [
     {
         id:1,
         title: "Full Stack Website", 
-        description:"Este proyecto fue realizado para el Seminario Integrador de la universidad, utilizando React, APIs, Java, MySQL",
+        description:"Este proyecto fue realizado para el Seminario Integrador de la universidad, utilizando React, APIs, Java, MySQL.",
         image:"/images/cine.png",
         tag:["All", "Web"],
         gitUrl:"https://github.com/P4ul4f/CinefilosFront.git",
