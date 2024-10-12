@@ -16,6 +16,15 @@ const projectsData = [
     },
     {
         id:2,
+        title: "Frontend Website", 
+        description:"Este proyecto fue realizado en un curso de JavaScript.",
+        image:"/images/under.png",
+        tag:["All", "Web"],
+        gitUrl:"https://github.com/P4ul4f/underposter.git",
+        previewUrl:"https://p4ul4f.github.io/underposter/index.html",
+    },
+    {
+        id:3,
         title: "React Portfolio Website", 
         description:"Portfolio personal.",
         image:"/images/fondo.png",
@@ -25,7 +34,7 @@ const projectsData = [
     },
     
     {
-        id:3,
+        id:4,
         title: "E-commerce Aplication", 
         description:"Este proyecto fue desarrollado en una asignatura de la universidad.",
         image:"/images/sabor.png",
@@ -34,16 +43,16 @@ const projectsData = [
         previewUrl:"/",
     },
     {
-        id:4,
+        id:5,
         title: "Frontend Website", 
-        description:"Proyecto realizado para curso de JavaScript.",
+        description:"Este proyecto fue realizado en un curso de JavaScript.",
         image:"/images/uco.png",
         tag:["All", "Web"],
         gitUrl:"https://github.com/P4ul4f/proyectofinal.git",
-        previewUrl:"/",
+        previewUrl:"https://proyectofinal-sepia.vercel.app/index.html",
     },
     {
-        id:5,
+        id:6,
         title: "App", 
         description:"Updating...",
         image:"/images/fondo.png",
