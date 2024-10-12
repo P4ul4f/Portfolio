@@ -20,7 +20,7 @@ const projectsData = [
         description:"Portfolio personal.",
         image:"/images/fondo.png",
         tag:["All", "Web"],
-        gitUrl:"/",
+        gitUrl:"https://github.com/P4ul4f/Portfolio.git",
         previewUrl:"/",
     },
     
@@ -45,7 +45,7 @@ const projectsData = [
     {
         id:5,
         title: "App", 
-        description:"Project 5 description",
+        description:"Updating...",
         image:"/images/fondo.png",
         tag:["All", "Mobile"],
         gitUrl:"/",
