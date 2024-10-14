@@ -7,6 +7,15 @@ import {animate, motion, useInView} from "framer-motion";
 const projectsData = [
     {
         id:1,
+        title: "Next.js Website", 
+        description:"Este proyecto fue utilizando Next.js",
+        image:"/images/dark.png",
+        tag:["All", "Web"],
+        gitUrl:"https://github.com/P4ul4f/Dark-Website",
+        previewUrl:"https://custom-website-p4ul4fs-projects.vercel.app",
+    },
+    {
+        id:2,
         title: "Full Stack Website", 
         description:"Este proyecto fue realizado para el Seminario Integrador de la universidad, utilizando React, APIs, Java, MySQL.",
         image:"/images/cine.png",
@@ -15,7 +24,7 @@ const projectsData = [
         previewUrl:"/",
     },
     {
-        id:2,
+        id:3,
         title: "Frontend Website", 
         description:"Este proyecto fue realizado en un curso de JavaScript.",
         image:"/images/under.png",
@@ -24,7 +33,7 @@ const projectsData = [
         previewUrl:"https://p4ul4f.github.io/underposter/index.html",
     },
     {
-        id:3,
+        id:4,
         title: "E-commerce Aplication", 
         description:"Este proyecto fue desarrollado en una asignatura de la universidad.",
         image:"/images/sabor.png",
@@ -33,7 +42,7 @@ const projectsData = [
         previewUrl:"/",
     },
     {
-        id:4,
+        id:5,
         title: "Frontend Website", 
         description:"Este proyecto fue realizado en un curso de JavaScript.",
         image:"/images/uco.png",
@@ -42,20 +51,11 @@ const projectsData = [
         previewUrl:"https://proyectofinal-sepia.vercel.app/index.html",
     },
     {
-        id:5,
+        id:6,
         title: "App", 
         description:"Updating...",
         image:"/images/fondo.png",
         tag:["All", "Mobile"],
-        gitUrl:"/",
-        previewUrl:"/",
-    },
-    {
-        id:6,
-        title: "E-commerce Aplication", 
-        description:"Updating...",
-        image:"/images/fondo.png",
-        tag:["All", "Web"],
         gitUrl:"/",
         previewUrl:"/",
     },
