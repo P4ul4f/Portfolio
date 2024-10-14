@@ -8,7 +8,7 @@ const projectsData = [
     {
         id:1,
         title: "Next.js Website", 
-        description:"Este proyecto fue realizado utilizando Next.js",
+        description:"This project was developed using Next.js.",
         image:"/images/dark.png",
         tag:["All", "Web"],
         gitUrl:"https://github.com/P4ul4f/Dark-Website",
@@ -17,7 +17,7 @@ const projectsData = [
     {
         id:2,
         title: "Full Stack Website", 
-        description:"Este proyecto fue realizado para el Seminario Integrador de la universidad, utilizando React, APIs, Java, MySQL.",
+        description:"This project was developed for the university's Integrative Seminar, using React, APIs, Java, and MySQL.",
         image:"/images/cine.png",
         tag:["All", "Web"],
         gitUrl:"https://github.com/P4ul4f/CinefilosFront.git",
@@ -26,7 +26,7 @@ const projectsData = [
     {
         id:3,
         title: "Frontend Website", 
-        description:"Este proyecto fue realizado en un curso de JavaScript.",
+        description:"This project was developed in a JavaScript course.",
         image:"/images/under.png",
         tag:["All", "Web"],
         gitUrl:"https://github.com/P4ul4f/underposter.git",
@@ -35,7 +35,7 @@ const projectsData = [
     {
         id:4,
         title: "E-commerce Aplication", 
-        description:"Este proyecto fue desarrollado en una asignatura de la universidad.",
+        description:"This project was developed in a university course.",
         image:"/images/sabor.png",
         tag:["All", "Web"],
         gitUrl:"https://github.com/Lisandro939/el-buen-sabor-API.git",
@@ -44,7 +44,7 @@ const projectsData = [
     {
         id:5,
         title: "Frontend Website", 
-        description:"Este proyecto fue realizado en un curso de JavaScript.",
+        description:"This project was developed in a JavaScript course.",
         image:"/images/uco.png",
         tag:["All", "Web"],
         gitUrl:"https://github.com/P4ul4f/proyectofinal.git",
@@ -84,7 +84,7 @@ const ProjectsSection = () => {
       
     <section id='projects'>
     <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        Mis Proyectos
+        My Projects
     </h2>
     <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag

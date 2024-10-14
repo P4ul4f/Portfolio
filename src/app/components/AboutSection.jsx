@@ -5,7 +5,7 @@ import TabButton from './TabButton';
 
 const TAB_DATA = [
   {
-    title:"Habilidades",
+    title:"Skills",
     id:"skills",
     content: (
       <ul className="list-disc pl-2">
@@ -16,28 +16,28 @@ const TAB_DATA = [
         <li>Python</li>
         <li>Git</li>
         <li>API</li>
-        <li>Gestión de Pruebas</li>
+        <li>Test Management</li>
       </ul>
     ),
   },
   {
-    title:"Educación",
+    title:"Education",
     id:"education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Estudiante de Ingeniería en Sistemas de Información, Universidad Tecnológica Nacional</li>
-        <li>Analista Desarrollador de Sistemas de Información, Universidad Tecnológica Nacional</li>
+        <li>Information Systems Engineering Student, Universidad Tecnológica Nacional</li>
+        <li>Information Systems Developer Analyst, Universidad Tecnológica Nacional</li>
       </ul>
     ),
   },
   {
-    title:"Certificaciones",
+    title:"Certification",
     id:"certification",
     content: (
       <ul className="list-disc pl-2">
         <li>First Certificate, Cultural Inglesa</li>
-        <li>Curso Full Stack, Egg</li>
-        <li>Programación Backend, CoderHouse</li>
+        <li>Full Stack Course, Egg</li>
+        <li>Backend Programming, CoderHouse</li>
         <li>React Js, CoderHouse</li>
         <li>Python, Udemy</li>
       </ul>
@@ -60,18 +60,23 @@ const AboutSection = () => {
         <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:py-16">
             <Image src="/images/aboutimage.jpg" width={400} height={400} className="rounded-lg" alt="About me image"></Image>
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-                <h2 className="text-4xl font-bold text-white mb-4">Acerca de mí</h2>
-                <p className="text-base lg:text-lg text-justify">Soy estudiante de cuarto año de Ingeniería en Sistemas de Información, con experiencia en desarrollo web y programación avanzada. Mi formación me ha permitido desarrollar habilidades técnicas en diversos lenguajes de programación, complementadas con un enfoque en la gestión de sistemas y el análisis de datos. Me especializo en el diseño de soluciones eficientes, seguras y escalables, aplicando un enfoque metódico y orientado a resultados. Estoy interesada en participar en proyectos innovadores donde pueda aplicar mis conocimientos y contribuir al desarrollo de soluciones tecnológicas.
+                <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
+                <p className="text-base lg:text-lg text-justify">
+                I am a fourth-year Information Systems Engineering student with experience in web development and advanced programming.
+                 My education has enabled me to develop technical skills in various programming languages, complemented by a focus on 
+                 systems management and data analysis. I specialize in designing efficient, secure, and scalable solutions, applying a methodical
+                  and results-driven approach. I am interested in participating in innovative projects where I can apply my knowledge and contribute
+                   to the development of technological solutions.
                 </p>
                 <div className="flex flex-row  justify-start mt-8">
                   <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>
-                    Educación
+                    Education
                   </TabButton>
                   <TabButton selectTab={() => handleTabChange("certification")} active={tab === "certification"}>
-                    Certificaciones
+                    Certifications
                   </TabButton>
                   <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
-                    Habilidades
+                    Skills
                   </TabButton>
                 </div>
                 <div className="mt-8">

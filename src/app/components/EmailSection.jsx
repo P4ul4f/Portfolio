@@ -38,11 +38,11 @@ const handleSubmit = async (e) => {
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative" id='contact'>
         
         <div>
-            <h5 className="text-xl font-bold text-white my-2">Contacto</h5>
+            <h5 className="text-xl font-bold text-white my-2">Contact</h5>
             <p className="text-[#ADB7BE] mb-4 max-2-md">
                 {""}
-                Interesada en nuevas oportunidades profesionales. Si tienes un proyecto en mente, 
-                estaré encantada de conversar sobre cómo puedo aportar valor a tu equipo.
+                Interested in new professional opportunities. If you have a project in mind, 
+                I would be happy to discuss how I can add value to your team.
             </p>
             <div className="socials flex flex-row gap-6">
                 <Link href="https://github.com/P4ul4f">
@@ -73,18 +73,18 @@ const handleSubmit = async (e) => {
                 id="email" 
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 required 
-                placeholder="contact@example.com" 
+                placeholder="your@email.com" 
                 />
                 </div>
                 <div className="mb-6">
-                <label htmlFor="subject" type="text" className="text-white block mb-2 text-sm font-medium">Asunto</label>
+                <label htmlFor="subject" type="text" className="text-white block mb-2 text-sm font-medium">Subject</label>
                 <input 
                 name="subject"
                 type="text" 
                 id="subject" 
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 required 
-                placeholder="Asunto de interés" 
+                placeholder="Topic of your message" 
                 />
                 </div>
                 <div className="mb-6">
@@ -92,13 +92,13 @@ const handleSubmit = async (e) => {
                         htmlFor="message"
                         className="text-white block text-sm mb-2 font-medium"
                     >
-                        Mensaje
+                        Message
                     </label>
                     <textarea 
                     name="message" 
                     id="message"
                     className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                    placeholder="Escribe tu mensaje aquí"
+                    placeholder="Type your message here"
                     >
                     </textarea>
                 </div>
@@ -106,12 +106,12 @@ const handleSubmit = async (e) => {
                 type="submit"
                 className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
                 >
-                    Enviar Mensaje
+                    Submit
                 </button>
                 {
                     emailSubmitted && (
                         <p className="text-green-500 text-sm mt-2">
-                            Email enviado exitosamente.
+                            Email sent successfully.
                         </p>
                     )
                 }

@@ -41,7 +41,7 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600" style={{ fontSize: '4.5rem' }}>
-              Hola, soy {" "}
+              Hello, I&apos;m {" "}
             </span>
             <br></br>
             <span ref={textRef}>
@@ -50,11 +50,11 @@ const HeroSection = () => {
                 sequence={[
                   "Paula",
                   1000,
-                  "Analista de Sistemas",
+                  "Systems Analyst",
                   1000,
                   "Full Stack Developer",
                   1000,
-                  "Estudiante de Ingeniería",
+                  "Engineering Student",
                   1000,
                 ]}
                 wrapper="span"
@@ -66,14 +66,15 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          Con una mentalidad orientada a resultados, me motiva trabajar en entornos dinámicos donde puedo aplicar mis habilidades y aprender continuamente. Busco contribuir a proyectos que desafíen mis capacidades y me permitan crecer profesionalmente.
+          With a results-oriented mindset, I am motivated to work in dynamic environments where I can apply my skills and continuously learn.
+           I seek to contribute to projects that challenge my abilities and allow me to grow professionally.
           </p>
           <div>
             <Link
               href="/#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-purple-500 to-purple-200 hover:bg-slate-200 text-white"
             >
-              Contratarme
+              Hire me
             </Link>
             <Link
               href="/CV.pdf"
@@ -81,7 +82,7 @@ const HeroSection = () => {
               download="CV.pdf"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Descargar CV
+                Download CV
               </span>
             </Link>
           </div>
