@@ -8,7 +8,7 @@ const projectsData = [
     {
         id:1,
         title: "Next.js Website", 
-        description:"Este proyecto fue utilizando Next.js",
+        description:"Este proyecto fue realizado utilizando Next.js",
         image:"/images/dark.png",
         tag:["All", "Web"],
         gitUrl:"https://github.com/P4ul4f/Dark-Website",
