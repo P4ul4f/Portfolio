@@ -13,6 +13,8 @@ const handleSubmit = async (e) => {
         subject: e.target.subject.value,
         message: e.target.message.value,
     };
+
+
     
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
@@ -31,6 +33,7 @@ const handleSubmit = async (e) => {
     if (response.status === 200) {
         console.log('Mensaje enviado.');
         setEmailSubmitted(true);
+        e.target.reset();
     }
 };
 
